@@ -7,7 +7,7 @@ const Landing = () => {
     return (    
         <div>
             <Navbar />
-            <div className="land_content">
+            <div className="land-content">
                 <div className="land-content-left">
                     <div className="land-title">
                         <p className="share">Share</p>
@@ -15,7 +15,7 @@ const Landing = () => {
                         <p className="sustain">Sustain</p>
                     </div> 
                     <div className="land-para">
-                        <p>Join our community effort to reduce food waste,<br/> feed more, and let's make a difference together</p>
+                        <p>Join our community effort to reduce food waste, feed more, and let's make a difference together</p>
                     </div>
                 </div>
                 <div className="land-content-right">
