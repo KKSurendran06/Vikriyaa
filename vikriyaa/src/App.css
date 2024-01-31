@@ -1,29 +1,27 @@
-.logo {
-  height: 95px;
-  width: 249px;
-  margin-top: 37px;
-  margin-left: 50px;
-}
-
 .navbar {
-  font-size: 25px;
-  font-family: 'Lato' ;
-  position: fixed;
+  display: flex;
+  gap: 20vw;
+}
+
+.logo {
+  width: 15vw;
+  height: auto;
+  margin: 1vw;
+}
+
+.navbar-right {
   display: inline-flex;
-  align-items: center;
-  margin-top: 37px;
-  margin-left: 350px;
-  gap: 80px;
-
+  margin-top: 3vw;
+  gap: 5vw;
+  font-size: 1.2vw;
 }
 
-.navbar li {
+.navbar-right li {
   list-style-type: none;
-  margin: 31px ;
-
 }
 
-.navbar li a {
+.navbar-right li a {
   text-decoration: none;
   color: #4e683f;
 }
+
