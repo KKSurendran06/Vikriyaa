@@ -4,7 +4,6 @@
 .land-content {
     display: flex;
     margin-top: 3rem;
-    gap:4rem;
 }
 
 .land-content-left {
@@ -36,6 +35,6 @@
 }
 
 .land-image {
-    width: 115%;
+    width: 100%;
     height: auto;   
 }
