@@ -2,7 +2,7 @@
   height: 95px;
   width: 249px;
   margin-top: 37px;
-  margin-left: 34px;
+  margin-left: 50px;
 }
 
 .navbar {
@@ -12,7 +12,8 @@
   display: inline-flex;
   align-items: center;
   margin-top: 37px;
-  margin-left: 484px;
+  margin-left: 350px;
+  gap: 80px;
 
 }
 
@@ -25,10 +26,4 @@
 .navbar li a {
   text-decoration: none;
   color: #4e683f;
-}
-
-.landing_img {
-  margin-left: 1100px;
-  margin-top: 130px;
-  height: 550px;
 }

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.land_content {
+    display: flex;
+    margin-top: 6rem;
+    gap:14rem;
+  }
+
+
+.land-title {
+    margin-left: 9rem;
+    display: flex;
+    margin-top: 50px;
+    gap: 2rem;
+  }
+
+.land-para {
+    margin-left: 9rem;
+}  
+
+.share {
+    font-size: 8rem;
+    color: rgba(0, 0, 0, 0.79);    
+    font-family: 'League Gothic';
+}
+
+.save {
+    margin-top: 6rem;
+    font-size: 11rem;
+    color: rgba(78, 104, 68, 1);
+    font-family: 'League Gothic';
+
+}
+
+.sustain {
+    font-size: 8rem;
+    color: rgba(0, 0, 0, 0.79);
+    font-family: 'League Gothic';
+}
+
+.land-image {
+    width: 100%;
+    height: auto;   
+    max-width: 900px;
+    height: auto;
+}

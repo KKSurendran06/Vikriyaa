@@ -9,13 +9,13 @@ const Navbar = () => {
          <a href='/'><img className="logo" src={logo} alt='logo' /></a> 
             <nav className='navbar'>
               <li>
-                 <Link to='/about'>About Us</Link>
+                 <Link to='#'>About us</Link>
               </li>
               <li>
-                 <Link to='/join'>Join Us</Link>
+                 <Link to='#'>Our mission</Link>
               </li>
               <li>
-                 <Link to='/impact'>Our Impact</Link>
+                 <Link to='#'>Join us</Link>
               </li>
             </nav>
         </div>
