@@ -1,25 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.land-content {
+.land-intro {
     display: flex;
     margin-top: 3rem;
 }
 
-.land-content-left {
+.land-intro-left {
     margin-left: 9vw;
     display: flex;
     flex-direction: column;
     max-width: 50vw
 }
 
-.land-title {
+.land-intro-title {
     display: flex;
     gap: 2vw;
 }
 
-.land-para {
+.land-intro-para {
     margin-top: -9vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }  
 
 .share, .sustain {
@@ -50,7 +50,63 @@
 
 }
 
+.join-button-bottom{
+    background-color:  #4E683F;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+    width: 11.7vw;
+    height: 3.3vw;
+    flex-shrink: 0;
+    border-radius: 2vw;
+    border: 0;
+    text-align: center;
+    font-size: 1.6vw;
+    color: white;
+    font-family: 'lato';
+    margin-top: -1.5vw;
+    margin-left: 33.5vw;
+
+}
+
 .land-image {
     width: 100%;
     height: auto;   
+}
+
+.land-content-box{
+    margin-left: 9vw;
+    margin-top: 10vw;
+    display:flex;
+    flex-direction: column;
+    font-family: 'lato';
+    max-width: 70vw;
+}
+
+.land-content{
+    margin-top: -0.2vw;
+    font-size: 1.5vw;
+    margin-bottom: 6vw;
+}
+
+
+#about {
+    color: rgba(78, 104, 68, 1);
+    font-size: 1.8vw;    
+}
+
+#mission {
+    color: rgba(78, 104, 68, 1);
+    font-size: 1.8vw;
+}
+
+#difference {
+    color: rgba(78, 104, 68, 1);
+    font-size: 1.8vw;
+}
+
+.footer {
+    margin-top: 6vw;
+    text-align: center;
+    font-size: 1.2vw;
+    margin-right: 2.8vw;
+    color: rgba(78, 104, 68, 1);
 }
