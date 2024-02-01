@@ -16,7 +16,7 @@ const Navbar = () => {
                <a href='#mission'>Our mission</a>
             </li>
             <li>
-               <a href='#difference'>Join us</a>
+               <a href='#join'>Join us</a>
             </li>
          </div>
       </div>

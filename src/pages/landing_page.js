@@ -45,7 +45,7 @@ const Landing = () => {
                 and sustainable world.
                 </p>
 
-                <p id="difference">Join us in makeing a difference</p>
+                <p id="join">Join us in makeing a difference</p>
                 <p className="land-content">
                     Vikriyaa warmly welcomes you to embark on this collective journey towards a world where surplus emerges as a potent force for 
                     positive change. Regardless of whether you are a donor, a claimant seeking support, or a passionate advocate committed to reducing food 
