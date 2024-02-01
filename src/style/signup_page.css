@@ -1,0 +1,36 @@
+.container-box{
+    display: flex;
+    margin-left: 4vw;;
+    margin-top: 1vw;
+    gap: 7vw;
+}
+
+.asset {
+    width: 43vw;
+    height: auto;
+    margin-top: 1vw;
+}
+
+.container-box-right {
+    margin-top: 2vw;
+    width: 28vw;
+    height: 36vw;
+    border-radius: 1.5vw;
+    background:#FDFFF9;
+    box-shadow: 35px 35px 100px 10px rgba(0, 0, 0, 0.25);
+}
+
+.register-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.register {
+    color: #4E683F;
+    font-family: Lato;
+    align-self: center;
+}
+
+.errMsg {
+    color: red;
+}
