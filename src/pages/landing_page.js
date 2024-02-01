@@ -17,6 +17,7 @@ const Landing = () => {
                     <div className="land-para">
                         <p>Join our community effort to reduce food waste, feed more, and let's make a difference together</p>
                     </div>
+                    <a href="/"><button className="join-button">Join Us</button></a>
                 </div>
                 <div className="land-content-right">
                     <img className="land-image" src={land} alt=" " />
