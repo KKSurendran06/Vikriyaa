@@ -18,7 +18,7 @@ const Landing = () => {
                     <div className="land-intro-para">
                         <p>Join our community effort to reduce food waste, feed more, and let's make a difference together</p>
                     </div>
-                    <a href="/"><button className="join-button">Sign Up</button></a>
+                    <a href="/signup"><button className="join-button">Sign Up</button></a>
                 </div>
                 <div className="land-intro-right">
                     <img className="land-image" src={land} alt=" " />
@@ -52,7 +52,7 @@ const Landing = () => {
                     waste, your active involvement is pivotal. Together, we can make a significant impact, fostering a community-driven movement that transforms 
                     surplus into a powerful instrument for positive social and environmental change. Join us at Vikriyaa and be a part of the impactful change we
                     envision for a better, more sustainable future</p>
-                    <a href="/"><button className="join-button-bottom">Sign Up</button></a>    
+                    <a href="/signup"><button className="join-button-bottom">Sign Up</button></a>    
             </div>
             <div className="footer">
                 <p>© 2024 Vikriyaa All rights reserved.</p>
