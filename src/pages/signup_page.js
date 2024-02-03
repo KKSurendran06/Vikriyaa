@@ -24,21 +24,10 @@ const Signup = () => {
                     <img className='asset' src={asset} alt=' '/>
                 </div>
                 <div className="container-box-right">
-                        <div className="register-card-content">
+                         <div className="register-card-content">
                             <h1 className="register">Register</h1>
                             <form onSubmit={handleSubmit(onSubmit)}>
-                                <div>
-                                    <label className="form_label">Username</label>
-                                    <input className="form_input" 
-                                    type="text" 
-                                    name="username" 
-                                    {...register("username", {
-                                            required: "Username is required."
-                                            }
-                                        )}/>
-                                    {errors.username && <p className="errMsg">{errors.username.message}</p>}
-                                </div>    
-                                <div>
+                                <div className="email-box">
                                     <label className="form_label">Email</label>
                                     <input className="form_input" 
                                     type="text" 
@@ -52,8 +41,19 @@ const Signup = () => {
                                       })}
                                     />
                                     {errors.email && <p className="errMsg">{errors.email.message}</p>}
-                                </div>     
-                                <div>   
+                                </div> 
+                                <div className="username-box">
+                                    <label className="form_label">Username</label>
+                                    <input className="form_input" 
+                                    type="text" 
+                                    name="username" 
+                                    {...register("username", {
+                                            required: "Username is required."
+                                            }
+                                        )}/>
+                                    {errors.username && <p className="errMsg">{errors.username.message}</p>}
+                                </div>        
+                                <div className="password-box">   
                                     <label className="form_label">Password</label>
                                     <input className="form_input" 
                                     type="password" 
@@ -67,11 +67,11 @@ const Signup = () => {
                                       })}
                                     />
                                     {errors.password && <p className="errMsg">{errors.password.message}</p>}
-                                </div>    
-                                <div className="buttons">
-                                    <button type="submit">Create a new account</button>
-                                    <button>Login in to your account</button>
-                                </div>
+                                </div>  
+                                <div className="button-box">
+                                        <button className="signup-button" type="submit">Create a new account</button>
+                                        <a href="/"><button className="signin-button" type="button">Login in to your account</button></a>
+                                </div>  
                             </form>
                         </div>
                 </div>

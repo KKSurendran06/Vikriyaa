@@ -27,8 +27,45 @@
 
 .register {
     color: #4E683F;
-    font-family: Lato;
+    font-size: 3.3vw;
+    font-family: 'lato';
     align-self: center;
+    font-weight: 400;
+
+}
+
+.username-box, .email-box, .password-box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.2vw;
+}
+
+.username-box, .password-box{
+    margin-top: 2vw;
+}
+
+.form_label {
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: rgba(0, 0, 0, 0.79);
+}
+
+.form_input {
+    border-radius: 8px;
+    border: 0;
+    background: #F3F3F3;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 23vw;
+    height: 3vw ;
+}
+
+.button-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    margin-top: 1.7vw;
+    margin-left: 2.2vw;
+    width: 23vw;
 }
 
 .errMsg {
