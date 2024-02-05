@@ -68,10 +68,10 @@ const Signup = () => {
                                     />
                                     {errors.password && <p className="errMsg">{errors.password.message}</p>}
                                 </div>  
-                                <div className="button-box">
-                                        <button className="signup-button" type="submit">Create a new account</button>
-                                        <a href="/"><button className="signin-button" type="button">Login in to your account</button></a>
-                                </div>  
+                                <button className="signup-button" type="submit">Create a new account</button>
+                                <div className="ortag">
+                                    <hr/>
+                                </div>
                             </form>
                         </div>
                 </div>

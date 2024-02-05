@@ -1,6 +1,6 @@
 .container-box{
     display: flex;
-    margin-left: 4vw;;
+    margin-left: 4vw;
     margin-top: 1vw;
     gap: 7vw;
 }
@@ -59,15 +59,19 @@
     height: 3vw ;
 }
 
-.button-box {
-    display: flex;
-    flex-direction: column;
-    border-radius: 40px;
-    margin-top: 1.7vw;
-    margin-left: 2.2vw;
+.signup-button {
     width: 23vw;
+    height: 3.3vw; 
+    border-radius: 20px;
+    background: #4E683F; 
+    font-style: 'lato';
+    font-size: 1.5vw;
+    color: white;
+    margin-left: 2.6vw;
+    margin-top: 1vw;
 }
 
 .errMsg {
     color: red;
 }
+
