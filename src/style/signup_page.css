@@ -75,3 +75,26 @@
     color: red;
 }
 
+.or-box{
+display: flex;
+color: #4E683F;
+
+}
+
+.line {
+    margin-top: 1.3vw;
+    width: 7vw;
+    height: 0vw;
+}
+
+.signin-button {
+    width: 19vw;
+    height: 2vw; 
+    border-radius: 20px;
+    background: white; 
+    font-style: 'lato';
+    font-size: 1vw;
+    color: #4E683F;
+    margin-left: 4.5vw;
+    border-color: #4E683F;
+}
