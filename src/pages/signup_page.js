@@ -74,8 +74,8 @@ const Signup = () => {
                                         <p className="or-text">or</p>
                                     <hr className="line"/>
                                 </div>
-                                <button className="signin-button" type="submit">Login to your account</button>
                             </form>
+                            <a href="/signin"><button className="signin-button" >Login to your account</button> </a>
                         </div>
                 </div>
             </div>
