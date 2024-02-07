@@ -59,6 +59,40 @@
     height: 3vw ;
 }
 
+
+
+.errMsg {
+    color: red;
+    font-size: 0.6vw;
+    margin-bottom: 3.2vw;
+    margin-top: -3.93vw;
+    margin-left: 16vw;
+}
+.or-box{
+display: flex;
+color: #4E683F;
+margin-bottom: -1vw;
+}
+
+.line {
+    margin-top: 1.3vw;
+    width: 7vw;
+    height: 0vw;
+}
+
+.signin-button {
+    margin-top: -0.4vw;
+    width: 19vw;
+    height: 2vw; 
+    border-radius: 20px;
+    background: white; 
+    font-style: 'lato';
+    font-size: 1vw;
+    color: #4E683F;
+    margin-left: 4.5vw;
+    border-color: #4E683F;
+}
+
 .signup-button {
     width: 23vw;
     height: 3.3vw; 
@@ -71,30 +105,7 @@
     margin-top: 1vw;
 }
 
-.errMsg {
-    color: red;
-}
-
-.or-box{
-display: flex;
-color: #4E683F;
-
-}
-
-.line {
-    margin-top: 1.3vw;
-    width: 7vw;
-    height: 0vw;
-}
-
-.signin-button {
-    width: 19vw;
-    height: 2vw; 
-    border-radius: 20px;
-    background: white; 
-    font-style: 'lato';
-    font-size: 1vw;
-    color: #4E683F;
-    margin-left: 4.5vw;
-    border-color: #4E683F;
+.or-text {
+    margin-top: 0.73vw;
+    font-size: 1.5vw;
 }

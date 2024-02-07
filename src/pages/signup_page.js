@@ -24,7 +24,7 @@ const Signup = () => {
                     <img className='asset' src={asset} alt=' '/>
                 </div>
                 <div className="container-box-right">
-                         <div className="register-card-content">
+                        <div className="register-card-content">
                             <h1 className="register">Register</h1>
                             <form onSubmit={handleSubmit(onSubmit)}>
                                 <div className="email-box">
@@ -67,11 +67,11 @@ const Signup = () => {
                                       })}
                                     />
                                     {errors.password && <p className="errMsg">{errors.password.message}</p>}
-                                </div>  
+                                </div>                     
                                 <button className="signup-button" type="submit">Create a new account</button>
                                 <div className="or-box">
                                     <hr className="line"/>
-                                        <p>or</p>
+                                        <p className="or-text">or</p>
                                     <hr className="line"/>
                                 </div>
                                 <button className="signin-button" type="submit">Login to your account</button>
