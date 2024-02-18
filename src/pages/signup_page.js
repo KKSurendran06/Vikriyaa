@@ -12,9 +12,22 @@ const Signup = () => {
         formState: { errors },
     } = useForm();
 
-    const onSubmit = (data) => {
-        console.log(data);
-    };
+    async function handleSubmit() {
+        const response = await fetch('http://localhost:5000/api/users/signup', {
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.string({
+                email,
+                username,
+                password
+            })
+        })
+
+        const data = await response.json()
+        console.log(data)
+    }
+   
 
     return (
         <div>
@@ -26,7 +39,7 @@ const Signup = () => {
                 <div className="container-box-right">
                         <div className="register-card-content">
                             <h1 className="register">Register</h1>
-                            <form onSubmit={handleSubmit(onSubmit)}>
+                            <form onSubmit={handleSubmit}>
                                 <div className="email-box">
                                     <label className="form_label">Email</label>
                                     <input className="form_input" 
