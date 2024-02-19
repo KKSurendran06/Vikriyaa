@@ -12,7 +12,7 @@ const Signup = () => {
         event.preventDefault()
         const response = await fetch('http://localhost:5000/api/signup', {
             method: "POST",
-            header: {
+            headers: {
                 'Content-Type':"application/json",
             },
             body: JSON.stringify({  
@@ -23,7 +23,7 @@ const Signup = () => {
             })
         })
 
-        const data = await response.JSON()
+        const data = await response.json()
         console.log(data)
     }
 
