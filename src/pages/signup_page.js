@@ -1,33 +1,12 @@
-import React  from "react";
-import { useForm } from 'react-hook-form';
+import React, { useState }  from "react";
 import "../style/signup_page.css"
 import asset from "../assets/login.png"
 import Navbar from "../components/navbar"
 
 const Signup = () => {
-
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-    } = useForm();
-
-    async function handleSubmit() {
-        const response = await fetch('http://localhost:5000/api/users/signup', {
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.string({
-                email,
-                username,
-                password
-            })
-        })
-
-        const data = await response.json()
-        console.log(data)
-    }
-   
+    const [username, setUsername] = useState();
+    const [email, setEmail] = useState();
+    const [password, setPassword] = useState();
 
     return (
         <div>
@@ -39,47 +18,35 @@ const Signup = () => {
                 <div className="container-box-right">
                         <div className="register-card-content">
                             <h1 className="register">Register</h1>
-                            <form onSubmit={handleSubmit}>
+                            <form >
                                 <div className="email-box">
+                                   
                                     <label className="form_label">Email</label>
                                     <input className="form_input" 
-                                    type="text" 
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    type="email" 
                                     name="email" 
-                                    {...register("email", 
-                                    {required: "Email is required.", 
-                                    pattern: { 
-                                        value: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/, 
-                                        message: "Enter a valid email." 
-                                        }
-                                      })}
-                                    />
-                                    {errors.email && <p className="errMsg">{errors.email.message}</p>}
+                                    />         
                                 </div> 
+
                                 <div className="username-box">
                                     <label className="form_label">Username</label>
                                     <input className="form_input" 
+                                    value={username}
+                                    onChange={(e) => setUsername(e.target.value)}
                                     type="text" 
                                     name="username" 
-                                    {...register("username", {
-                                            required: "Username is required."
-                                            }
-                                        )}/>
-                                    {errors.username && <p className="errMsg">{errors.username.message}</p>}
+                                    />
                                 </div>        
                                 <div className="password-box">   
                                     <label className="form_label">Password</label>
                                     <input className="form_input" 
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
                                     type="password" 
                                     name="password" 
-                                    {...register("password", 
-                                    {required: "Password is required", 
-                                    minLength: {
-                                        value:8, 
-                                        message: "Password must be 8 characters"
-                                        } 
-                                      })}
                                     />
-                                    {errors.password && <p className="errMsg">{errors.password.message}</p>}
                                 </div>                     
                                 <button className="signup-button" type="submit">Create a new account</button>
                                 <div className="or-box">
