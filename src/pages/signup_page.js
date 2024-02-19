@@ -8,6 +8,25 @@ const Signup = () => {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
 
+    async function signUp(event) {
+        event.preventDefault()
+        const response = await fetch('http://localhost:5000/api/signup', {
+            method: "POST",
+            header: {
+                'Content-Type':"application/json",
+            },
+            body: JSON.stringify({  
+                email,
+                username,
+                password
+
+            })
+        })
+
+        const data = await response.JSON()
+        console.log(data)
+    }
+
     return (
         <div>
             <Navbar/>
@@ -18,7 +37,7 @@ const Signup = () => {
                 <div className="container-box-right">
                         <div className="register-card-content">
                             <h1 className="register">Register</h1>
-                            <form >
+                            <form onSubmit={signUp}>
                                 <div className="email-box">
                                    
                                     <label className="form_label">Email</label>
